@@ -70,4 +70,4 @@ It will return JSON like this:
 
 ## Build Status
 
-[![Build Status](https://secure.travis-ci.org/davglass/lcov-parser.png?branch=master)](http://travis-ci.org/davglass/lcov-parser)
+[![Build Status](https://secure.travis-ci.org/davglass/lcov-parse.png?branch=master)](http://travis-ci.org/davglass/lcov-parse)
