@@ -4,12 +4,12 @@ Simple LCOV file parser
 
 ## Installation
 
-    npm install lcov-parser
+    npm install lcov-parse
 
 
 ## Usage
 
-    var parse = require('lcov-parser');
+    var parse = require('lcov-parse');
 
     parse('./path/to/file.info', function(err, data) {
         //process the data here
