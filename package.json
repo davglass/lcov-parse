@@ -1,0 +1,29 @@
+{
+    "name": "lcov-parse",
+    "description": "Parse lcov results files and return JSON",
+    "version": "0.0.1",
+    "author": "Dav Glass <davglass@gmail.com>",
+    "bugs": { "url" : "http://github.com/davglass/lcov-parse/issues" },
+    "main": "./lib/index",
+    "tags": [
+        "lcov",
+        "json",
+        "coverage",
+        "parser"
+    ],
+    "devDependencies": {
+        "vows": "*"
+    },
+    "scripts": {
+        "test": "./node_modules/.bin/vows ./tests/*.js"
+    },
+    "licenses":[
+        {
+            "type" : "BSD"
+        }
+    ],
+    "repository": {
+        "type":"git",
+        "url":"http://github.com/davglass/lcov-parse.git"
+    }
+}
