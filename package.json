@@ -1,7 +1,7 @@
 {
     "name": "lcov-parse",
     "description": "Parse lcov results files and return JSON",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Dav Glass <davglass@gmail.com>",
     "bugs": { "url" : "http://github.com/davglass/lcov-parse/issues" },
     "main": "./lib/index",
@@ -12,10 +12,14 @@
         "parser"
     ],
     "devDependencies": {
-        "vows": "*"
+        "yui-lint": "~0.1.1",
+        "jshint": "~0.9.0",
+        "istanbul": "~0.1.8",
+        "vows": "*" 
     },
     "scripts": {
-        "test": "./node_modules/.bin/vows ./tests/*.js"
+        "pretest": "jshint --config ./node_modules/yui-lint/jshint.json ./lib/",
+        "test": "istanbul cover --print both vows -- --spec ./tests/*.js"
     },
     "licenses":[
         {
