@@ -1,11 +1,10 @@
 var vows = require('vows'),
     path = require('path'),
     assert = require('assert'),
-    parse = require(path.join(__dirname, '../lib')),
+    parse = require('../lib'),
     yuiFile = path.join(__dirname, 'info/parts.info');
 
-
-vows.describe('Test Loading and Bindings').addBatch({
+var tests = {
     'Should be loaded': {
         topic: function() {
             return parse;
@@ -52,6 +51,12 @@ vows.describe('Test Loading and Bindings').addBatch({
             assert.equal(data[1].functions.found, 17);
             assert.equal(data[1].functions.hit, 17);
         },
+        'verify number of branches': function(err, data) {
+            assert.equal(data[1].branches.found, 23);
+            assert.equal(data[1].branches.hit, 22);
+            assert.equal(data[1].branches.found, data[1].branches.details.length);
+            assert.equal(data[1].branches.details[data[1].branches.details.length - 1].taken, 0);
+        },
         'verify function details': function(err, data) {
             assert.equal(data[0].functions.details.length, 29);
             assert.equal(data[1].functions.details.length, 17);
@@ -81,5 +86,7 @@ vows.describe('Test Loading and Bindings').addBatch({
         },
 
     }
-}).export(module);
+};
+
+vows.describe('Test Loading and Bindings').addBatch(tests)['export'](module);
 
