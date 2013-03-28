@@ -22,6 +22,16 @@ var tests = {
             assert.isString(err);
         }
     },
+    'Parse as a string': {
+        topic: function() {
+            parse('TN:TestName\nSF:foobar.js\nend_of_record\n', this.callback);
+        },
+        'should parse': function(err, data) {
+            assert.isArray(data);
+            assert.equal('TestName', data[0].title);
+            assert.equal('foobar.js', data[0].file);
+        }
+    },
     'parse the file': {
         topic: function() {
             parse(yuiFile, this.callback);
