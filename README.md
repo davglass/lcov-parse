@@ -15,6 +15,12 @@ Simple LCOV file parser
         //process the data here
     });
 
+or
+
+    parse(lcovString, function(err, data) {
+        //process the data here
+    });
+
 ## Formatting
 
 Using this as a guide: http://ltp.sourceforge.net/coverage/lcov/geninfo.1.php
