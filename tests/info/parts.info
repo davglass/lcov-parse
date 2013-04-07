@@ -393,3 +393,23 @@ BRDA:82,8,1,-
 BRF:23
 BRH:22
 end_of_record
+
+TN:Test #3
+SF:javascript/common.js
+FN:2,create
+FN:3,javascript
+FNF:2
+FNH:2
+FNDA:19,create
+FNDA:2,javascript
+DA:1,19
+DA:2,19
+DA:3,19
+DA:4,2
+DA:5,2
+DA:7,0
+LF:6
+LH:5
+BRF:0
+BRH:0
+end_of_record
