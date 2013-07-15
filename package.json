@@ -1,7 +1,7 @@
 {
     "name": "lcov-parse",
     "description": "Parse lcov results files and return JSON",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "author": "Dav Glass <davglass@gmail.com>",
     "bugs": { "url" : "http://github.com/davglass/lcov-parse/issues" },
     "main": "./lib/index",
