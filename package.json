@@ -19,7 +19,7 @@
     },
     "scripts": {
         "pretest": "jshint --config ./node_modules/yui-lint/jshint.json ./lib/",
-        "test": "istanbul cover --print both vows -- --spec ./tests/*.js"
+        "test": "istanbul cover --print both ./node_modules/vows/bin/vows -- --spec ./tests/*.js"
     },
     "licenses":[
         {
