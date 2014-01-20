@@ -3,6 +3,10 @@
     "description": "Parse lcov results files and return JSON",
     "version": "0.0.5",
     "author": "Dav Glass <davglass@gmail.com>",
+    "contributors": [
+        "Alan Gutierrez <alan@prettyrobots.com>",
+        "Gerard Escalante <gerard@saygo.ca>"
+    ],
     "bugs": { "url" : "http://github.com/davglass/lcov-parse/issues" },
     "main": "./lib/index",
     "tags": [
