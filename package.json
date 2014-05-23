@@ -1,39 +1,39 @@
 {
-  "name": "lcov-parse",
-  "description": "Parse lcov results files and return JSON",
-  "version": "0.0.6",
-  "author": "Dav Glass <davglass@gmail.com>",
-  "contributors": [
-    "Alan Gutierrez <alan@prettyrobots.com>",
-    "Gerard Escalante <gerard@saygo.ca>"
-  ],
-  "bugs": {
-    "url": "http://github.com/davglass/lcov-parse/issues"
-  },
-  "main": "./lib/index",
-  "tags": [
-    "lcov",
-    "json",
-    "coverage",
-    "parser"
-  ],
-  "devDependencies": {
-    "yui-lint": "~0.1.1",
-    "jshint": "~0.9.0",
-    "istanbul": "~0.1.8",
-    "vows": "*"
-  },
-  "scripts": {
-    "pretest": "jshint --config ./node_modules/yui-lint/jshint.json ./lib/",
-    "test": "istanbul cover --print both ./node_modules/vows/bin/vows -- --spec ./tests/*.js"
-  },
-  "licenses": [
-    {
-      "type": "BSD"
+    "name": "lcov-parse",
+    "description": "Parse lcov results files and return JSON",
+    "version": "0.0.6",
+    "author": "Dav Glass <davglass@gmail.com>",
+    "contributors": [
+        "Alan Gutierrez <alan@prettyrobots.com>",
+        "Gerard Escalante <gerard@saygo.ca>"
+    ],
+    "bugs": {
+        "url": "http://github.com/davglass/lcov-parse/issues"
+    },
+    "main": "./lib/index",
+    "tags": [
+        "lcov",
+        "json",
+        "coverage",
+        "parser"
+    ],
+    "devDependencies": {
+        "istanbul": "^0.2.10",
+        "jshint": "^2.5.1",
+        "vows": "*",
+        "yui-lint": "~0.1.1"
+    },
+    "scripts": {
+        "pretest": "jshint --config ./node_modules/yui-lint/jshint.json ./lib/",
+        "test": "istanbul cover --print both ./node_modules/vows/bin/vows -- --spec ./tests/*.js"
+    },
+    "licenses": [
+        {
+            "type": "BSD"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/davglass/lcov-parse.git"
     }
-  ],
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/davglass/lcov-parse.git"
-  }
 }
