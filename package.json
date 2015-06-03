@@ -27,11 +27,7 @@
     "pretest": "jshint --config ./node_modules/yui-lint/jshint.json ./lib/",
     "test": "istanbul cover --print both ./node_modules/vows/bin/vows -- --spec ./tests/*.js"
   },
-  "licenses": [
-    {
-      "type": "BSD"
-    }
-  ],
+  "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
     "url": "http://github.com/davglass/lcov-parse.git"
