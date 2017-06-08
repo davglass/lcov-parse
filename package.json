@@ -7,6 +7,7 @@
     "Alan Gutierrez <alan@prettyrobots.com>",
     "Gerard Escalante <gerard@saygo.ca>"
   ],
+  "bin" : { "lcov-parse" : "./bin/cli.js" },
   "bugs": {
     "url": "http://github.com/davglass/lcov-parse/issues"
   },
